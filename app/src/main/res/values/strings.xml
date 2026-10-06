@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">MusicConverter</string>
+    <string name="app_title">Music Converter</string>
+
+    <string name="sub_title">Choose a WAV or MP3 file.</string>
+    <string name="sub_title_change">Set tempo and pitch.</string>
+    <string name="choose_music">Choose music</string>
+    <string name="use_this_track">Use this track</string>
+    <string name="no_audio_in_folder">No WAV or MP3 files in this folder.</string>
+    <string name="select_track_first">Select a track first.</string>
+    <string name="folder_unreadable">This folder can’t be opened.</string>
+    <string name="current_folder">Folder: %1$s</string>
+    <string name="save_folder">Folder</string>
+    <string name="save">Save</string>
+    <string name="converting">Converting…</string>
+    <string name="convert_saved">Saved to %1$s</string>
+    <string name="convert_failed">Couldn’t convert this file.</string>
+    <string name="select_file_first">Choose a music file first.</string>
+    <string name="unsupported_file">Choose a WAV or MP3 file.</string>
+    <string name="permission_required">Storage permission is needed to browse music.</string>
+    <string name="directory_missing">That folder doesn’t exist.</string>
+
+    <string name="license1_title">SoundTouch Audio Processing Library</string>
+    <string name="license1_copyright">Copyright © Olli Parviainen</string>
+    <string name="license1_link">http://www.surina.net/soundtouch/index.html</string>
+    <string name="license1_content">The SoundTouch library is open-source software and is released under the GNU Lesser General Public License (LGPL) v2.1. The library can be further distributed and used in other applications subject to the LGPL license terms:\n\n
+        http://www.surina.net/soundtouch/license.html
+    </string>
+
+    <string name="license2_title">Glide</string>
+    <string name="license2_copyright">Sam Judd - @sjudd on GitHub, @samajudd on Twitter</string>
+    <string name="license2_link">https://github.com/bumptech/glide</string>
+    <string name="license2_content">License for everything not in third_party and not otherwise marked:
+
+Copyright 2014 Google, Inc. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are
+permitted provided that the following conditions are met:
+
+   1. Redistributions of source code must retain the above copyright notice, this list of
+         conditions and the following disclaimer.
+
+   2. Redistributions in binary form must reproduce the above copyright notice, this list
+         of conditions and the following disclaimer in the documentation and/or other materials
+         provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY GOOGLE, INC. ``AS IS`` AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL GOOGLE, INC. OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+The views and conclusions contained in the software and documentation are those of the
+authors and should not be interpreted as representing official policies, either expressed
+or implied, of Google, Inc.\n
+
+        https://github.com/bumptech/glide/blob/master/LICENSE
+    </string>
+
+    <string name="license3_title">SoundTouch Audio Processing Library</string>
+    <string name="license3_copyright">Copyright © Olli Parviainen</string>
+    <string name="license3_link">http://www.surina.net/soundtouch/index.html</string>
+    <string name="license3_content">The SoundTouch library is open-source software and is released under the GNU Lesser General Public License (LGPL) v2.1. The library can be further distributed and used in other applications subject to the LGPL license terms:\n\n
+        http://www.surina.net/soundtouch/license.html
+    </string>
+
+    <string name="how_to_heading">How to use</string>
+    <string name="close">Close</string>
+    <string name="how_to_title1">Choose a track</string>
+    <string name="how_to_content1">Tap the artwork, open a folder, and select a WAV or MP3 file.</string>
+    <string name="how_to_title2">Convert</string>
+    <string name="how_to_content2">Tempo runs from 5% to 500%. Pitch moves about five octaves up or down. Tap Convert to save a new WAV file.</string>
+
+</resources>

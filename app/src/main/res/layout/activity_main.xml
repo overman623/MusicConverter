@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_background"
+    android:animateLayoutChanges="true"
+    >
+
+    <Button
+        android:id="@+id/button_help"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/ic_img_help"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_setting"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_img_gear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_title"
+        android:textSize="28sp"
+        android:fontFamily="@font/notosans_bold"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/text_info_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_info_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:fontFamily="@font/notosans_semibold"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/layout_center"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_info_title">
+
+        <ImageView
+            android:id="@+id/image_music_select"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <!--mp3파일 불러오기.-->
+
+        <TextView
+            android:id="@+id/text_music_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/notosans_bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/image_music_select"
+            app:layout_constraintStart_toStartOf="@+id/image_music_select"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_music_init"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_btn_close_nor"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_center">
+
+        <TextView
+            android:id="@+id/text_tempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/notosans_bold"
+            android:text="Tempo"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/seek_bar_tempo"
+            app:layout_constraintEnd_toEndOf="@+id/seek_bar_tempo"
+            app:layout_constraintStart_toStartOf="@+id/seek_bar_tempo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SeekBar
+            android:id="@+id/seek_bar_tempo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:progressDrawable="@drawable/custom_seek_bar"
+            android:thumb="@drawable/custom_seek_thumb"
+            android:min="5"
+            android:max="500"
+            app:layout_constraintBottom_toTopOf="@+id/text_pitch"
+            app:layout_constraintEnd_toEndOf="@+id/text_pitch"
+            app:layout_constraintStart_toStartOf="@+id/text_pitch"
+            app:layout_constraintTop_toBottomOf="@+id/text_tempo" />
+
+        <TextView
+            android:id="@+id/text_pitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/notosans_bold"
+            android:text="Pitch"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/seek_bar_pitch"
+            app:layout_constraintEnd_toEndOf="@+id/seek_bar_pitch"
+            app:layout_constraintStart_toStartOf="@+id/seek_bar_pitch"
+            app:layout_constraintTop_toBottomOf="@+id/seek_bar_tempo" />
+
+        <com.happyhouse.music.converter.CustomSeekBar
+            android:id="@+id/seek_bar_pitch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:max="10000"
+            android:thumb="@drawable/custom_seek_thumb"
+            android:progressDrawable="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/button_control_init"
+            app:layout_constraintEnd_toEndOf="@+id/button_control_init"
+            app:layout_constraintStart_toStartOf="@+id/button_control_init"
+            app:layout_constraintTop_toBottomOf="@+id/text_pitch" />
+
+        <Button
+            android:id="@+id/button_control_init"
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ic_btn_rounding_white"
+            android:fontFamily="@font/notosans_bold"
+            android:text="Init"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/seek_bar_tempo"
+            app:layout_constraintEnd_toStartOf="@+id/button_convert"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seek_bar_pitch" />
+
+        <Button
+            android:id="@+id/button_convert"
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ic_btn_rounding_white"
+            android:fontFamily="@font/notosans_bold"
+            android:text="Convert"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/seek_bar_tempo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_control_init"
+            app:layout_constraintTop_toBottomOf="@+id/seek_bar_pitch"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/loading_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/image_loading"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/text_loading"
+            android:layout_width="200dp"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:text="@string/converting"
+            android:textColor="@color/white"
+            android:fontFamily="@font/notosans_bold"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/image_loading"
+            />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
